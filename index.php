@@ -15,7 +15,7 @@
     <!-- Folha de estilo própria -->
     <link href="css\navbar.css" rel="stylesheet">
 
-    <title>Início</title>
+    <title>CRUD3</title>
 </head>
 
 <body>
