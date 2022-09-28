@@ -38,7 +38,7 @@
 
         ?>
         <a href="cadastrar.php" class="btn btn-primary mb-3"><i class="fa-solid fa-plus fs-5 me-3"></i>CADASTRAR</a>
-        <table id="datatable" class="table table-sm table-hover text-center">
+        <table id="datatable" class="table table-striped table-hover">
             <!-- <table class="table table-sm table-dark"> -->
             <thead class="table-dark">
                 <tr>
