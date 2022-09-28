@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $sql= "UPDATE `crud_2` SET `first_name`='$first_name',`last_name`='$last_name',`email`='$email',`gender`='$gender' WHERE id=$id";       
     $result =mysqli_query($conn, $sql);
     if ($result) {
-        header("Location: data_table?msg=Registro atualizado com sucesso na base de dados!");
+        header("Location: new_data_table?msg=Registro atualizado com sucesso na base de dados!");
     }
     else {
         echo "Falhou! " . mysqli_error($conn);       

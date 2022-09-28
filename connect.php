@@ -1,12 +1,5 @@
 <?php
-$servername="localhost";
-$username="root";
-$password="";
-$dbname="crud";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn=new mysqli ('localhost','root','','crud');
 if(!$conn){
-    die("Conexão falhou " . mysqli_connect_error() );
+    die(mysqli_error($conn));    
 }
-//echo "Conexão bem sucedida";
-?> 

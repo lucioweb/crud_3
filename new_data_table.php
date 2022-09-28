@@ -37,12 +37,16 @@
         }
 
         ?>
-        <a href="cadastrar.php" class="btn btn-primary btn-sm mb-3"><i class="fa-solid fa-plus fs-5 me-3"></i>Cadastrar</a>
-        <table id="datatable" class="table table-striped table-hover">
+        <div class="text-center mb-4">
+            <h3>LISTA DE USUÁIOS REGISTRADOS</h3>
+            <p class="text-muted">Data-list de usuários cadastrados</p>
+        </div>
+        <a href="cadastrar.php" class="btn btn-primary btn-sm mb-3"><i class="fa-solid fa-plus fs-6 me-3"></i>Cadastrar</a>
+        <table id="datatable" class="table table-striped table-hover table-sm">
             <!-- <table class="table table-sm table-dark"> -->
             <thead class="table-dark">
                 <tr>
-                    <th scope="col">CÓD</th>
+                    <th scope="col">ID</th>
                     <th scope="col">NOME</th>
                     <th scope="col">SOBRENOME</th>
                     <th scope="col">EMAIL</th>
@@ -58,33 +62,30 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                        <td class=""><?php echo $row['id'] ?></td>
+                        <td><?php echo $row['id'] ?></td>
                         <td><?php echo $row['first_name'] ?></td>
                         <td><?php echo $row['last_name'] ?></td>
                         <td><?php echo $row['email'] ?></td>
                         <td><?php echo $row['gender'] ?></td>
                         <td class="text-center">
-                            <button type="button" class="btn btn-primary btn-sm me-md-2">
-                                <a href="editar.php?id=<?php echo $row['id'] ?>" 
-                                class="text-light">
-                                <!-- <i class="fa-solid fa-pen-to-square fs-5 me-3"></i> -->
-                            EDITAR
-                            </a>
-                        
+
+
+                      <!--       <button type="button" class="btn btn-primary btn-sm">
+                                <a href="editar.php?id=<?php echo $row['id'] ?>" class="text-light">
+                                    <i class="fa-solid fa-pen-to-square fs-5 me-3"></i>
+                                    Editar
+                                </a>
+
                             </button>
-                            <button class="btn btn-danger btn-sm me-md-2">
-                                <a href="delete.php?deleteid='.$id.'" 
-                                class="text-light">
-                                <!-- <i class="fa-solid fa-trash fs-5 me-3 text-light"></i> -->
-                                EXCLUIR
-                            </a>
-                        </button>
-                    
-                            
+                            <button type="button" class="btn btn-danger btn-sm">
+                                <a href="delete.php?deleteid='.$id.'" class="text-light">
+                                    <i class="fa-solid fa-trash fs-5 me-3 text-light"></i>
+                                    Excluir
+                                </a>
+                            </button> -->
 
-
-                            <!-- <a href="editar.php?id=<?php echo $row['id'] ?>" class="link-primary"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a> -->
-                            <!-- <a href="delete.php?deleteid='.$id.'" class="link-danger"><i class="fa-solid fa-trash fs-5"></i></a> -->
+                            <a href="editar.php?id=<?php echo $row['id'] ?>" class="link-primary"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+                            <a href="delete.php?deleteid='.$id.'" class="link-danger"><i class="fa-solid fa-trash fs-5 me-3"></i></a>
                         </td>
                     </tr>
 
@@ -97,10 +98,10 @@
     </main>
     <!-- CDN do jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    
+
     <!-- CDN do javascript do data-table -->
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/datatables.min.js"></script>
-    
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

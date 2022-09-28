@@ -68,8 +68,8 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-success" name="submit">Atualizar</button>
-                    <a href="data_table.php" class="btn btn-danger">Cancela</a>
+                    <button type="submit" class="btn btn-success btn-sm" name="submit">Atualizar</button>
+                    <a href="new_data_table.php" class="btn btn-danger btn-sm">Cancela</a>
                 </div>
             </form>
         </div>
