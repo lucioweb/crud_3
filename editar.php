@@ -21,19 +21,20 @@
 <body>
     <header>
         <!-- Include do navbar da página  -->
-        <?php include "shareds/navbar.php";?>
+        <?php include 'shareds/navbar.php';?>
     </header>
 
     <main class="container">
         <!-- Include do update  -->
-        <?php include "includes/update.php";?>
+        
         <div class="text-center mb-4">
             <h3>EDITAR</h3>
             <p class="text-muted">Atualize os dados do usuário</p>
         </div>
 
         <?php
-
+        include 'includes/update.php';
+        $id = $_GET['id'];
         $sql = "SELECT * FROM `crud_2` WHERE id = $id LIMIT 1";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);

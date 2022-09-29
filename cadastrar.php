@@ -21,12 +21,12 @@
 <body>
     <header>
         <!-- Include do navbar da página  -->
-        <?php include "shareds/navbar.php";?>
+        <?php include 'shareds/navbar.php';?>
     </header>
 
     <main class="container">
         <!-- Include do create  -->
-        <?php include "includes/create.php";?>
+        <?php include 'includes/create.php';?>
         <div class="text-center mb-4">
             <h3>CADASTRAR</h3>
             <p class="text-muted">Complete os campos do formulário para adicionar um novo usuário</p>

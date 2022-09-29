@@ -1,3 +1,3 @@
 <?php
-include "includes/delete.php"
+include 'includes/delete.php'
 ?>

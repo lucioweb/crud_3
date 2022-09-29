@@ -38,7 +38,7 @@
 
         ?>
         <div class="text-center mb-4">
-            <h3>LISTA DE USUÁIOS REGISTRADOS</h3>
+            <h3>LISTA DE USUÁRIOS REGISTRADOS</h3>
             <p class="text-muted">Data-list de usuários cadastrados</p>
         </div>
         <a href="cadastrar.php" class="btn btn-primary btn-sm mb-3"><i class="fa-solid fa-plus fs-6 me-3"></i>Cadastrar</a>
@@ -56,7 +56,7 @@
             </thead>
             <tbody>
                 <?php
-                include "db_conn.php";
+                include "connect.php";
                 $sql = "SELECT * FROM `crud_2`";
                 $result = mysqli_query($conn, $sql);
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -68,22 +68,6 @@
                         <td><?php echo $row['email'] ?></td>
                         <td><?php echo $row['gender'] ?></td>
                         <td class="text-center">
-
-
-                      <!--       <button type="button" class="btn btn-primary btn-sm">
-                                <a href="editar.php?id=<?php echo $row['id'] ?>" class="text-light">
-                                    <i class="fa-solid fa-pen-to-square fs-5 me-3"></i>
-                                    Editar
-                                </a>
-
-                            </button>
-                            <button type="button" class="btn btn-danger btn-sm">
-                                <a href="delete.php?deleteid='.$id.'" class="text-light">
-                                    <i class="fa-solid fa-trash fs-5 me-3 text-light"></i>
-                                    Excluir
-                                </a>
-                            </button> -->
-
                             <a href="editar.php?id=<?php echo $row['id'] ?>" class="link-primary"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
                             <a href="delete.php?deleteid='.$id.'" class="link-danger"><i class="fa-solid fa-trash fs-5 me-3"></i></a>
                         </td>

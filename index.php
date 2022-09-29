@@ -21,7 +21,7 @@
 <body>
     <header>
         <!-- Include do navbar da página  -->
-        <?php include "shareds/navbar.php"; ?>
+        <?php include 'shareds/navbar.php'; ?>
     </header>
 
     <main class="container">
